@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainã Santana | Portfólio</title>
+
+    <meta name="description"
+        content="Portfólio de Rainã Santana — Desenvolvedor Front-end, Designer Gráfico e Fotógrafo.">
+    <meta property="og:title" content="Rainã Santana | Portfólio">
+    <meta property="og:description" content="Desenvolvedor Front-end, Designer Gráfico e Fotógrafo.">
+    <meta property="og:image" content="assets/img/foto-perfil.jpg">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Partículas de fundo (o JS preenche isso dinamicamente) -->
+    <div id="particles" aria-hidden="true"></div>
+
+    <header>
+        <nav>
+            <h2 class="logo">Rainã.</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#trajetoria">Trajetória</a></li>
+                <li><a href="#portfolio">Projetos</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="menu-mobile" role="button" tabindex="0" aria-label="Abrir menu">☰</div>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <div class="hero-text">
+                <span>Olá, eu sou</span>
+                <h1>Rainã Santana</h1>
+                <h2 id="typing" aria-live="polite"></h2>
+                <p>Desenvolvedor Front-end, Designer Gráfico e Fotógrafo.</p>
+                <div class="buttons">
+                    <a class="btn" href="#portfolio">Ver Projetos</a>
+                    <a class="btn2" href="#contato">Falar Comigo</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="circle" aria-hidden="true"></div>
+                <img src="assets/img/foto-de-perfil.jpeg" alt="Foto de perfil de Rainã Santana">
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <h2 class="title">Sobre Mim</h2>
+        <div class="about">
+            <div class="card">
+                <h3>💻 Desenvolvimento</h3>
+                <p>HTML, CSS, JavaScript, React e projetos Front-end.</p>
+            </div>
+            <div class="card">
+                <h3>🎨 Design</h3>
+                <p>Branding, identidade visual e social media.</p>
+            </div>
+            <div class="card">
+                <h3>📷 Fotografia</h3>
+                <p>Ensaios, paisagens e edição de imagens.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="trajetoria">
+        <h2 class="title">Trajetória</h2>
+        <div class="timeline">
+            <div class="line">
+                <div class="item">
+                    <span class="item-icon">🎪</span>
+                    <span class="item-date">2013 — 2015</span>
+                    <h3>Eventos e Multimídia</h3>
+                    <p>Educandário Eurípedes Barsanulfo — produção de eventos e multimídia, agente de portaria, auxiliar de secretaria e auxiliar administrativo.</p>
+                </div>
+                <div class="item">
+                    <span class="item-icon">📷</span>
+                    <span class="item-date">2013 — 2015</span>
+                    <h3>Fotógrafo Freelancer</h3>
+                    <p>Ensaios fotográficos de gestante, festas infantis, natureza e modelos.</p>
+                </div>
+                <div class="item">
+                    <span class="item-icon">🎓</span>
+                    <span class="item-date">2017</span>
+                    <h3>Design Gráfico</h3>
+                    <p>Formado pelo Centro Universitário IESB.</p>
+                </div>
+                <div class="item current">
+                    <span class="item-icon">🚒</span>
+                    <span class="item-date">2022 — Atualmente</span>
+                    <h3>Brigadista</h3>
+                    <p>CONAB / Brasília Shopping — gerenciamento de crises, tomada de decisão rápida sob pressão, atendimento ao público e primeiros socorros.</p>
+                </div>
+                <div class="item">
+                    <span class="item-icon">💻</span>
+                    <span class="item-date">Previsão: dez/2026</span>
+                    <h3>Análise e Desenvolvimento de Sistemas</h3>
+                    <p>Gran Faculdade — conclusão prevista.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2 class="title">Projetos</h2>
+
+        <div class="filters">
+            <button class="active" data-filter="all" aria-pressed="true">Todos</button>
+            <button data-filter="programacao" aria-pressed="false">Programação</button>
+            <button data-filter="design" aria-pressed="false">Design</button>
+            <button data-filter="fotografia" aria-pressed="false">Fotografia</button>
+        </div>
+
+
+        <div class="grid">
+
+            <div class="project" data-category="programacao" data-title="Timer Copa do Mundo"
+                data-image="assets/img/programacao/timer-copa-do-mundo.png"
+                data-description="Projeto de um timer temático para a Copa do Mundo onde se seleciona as partidas, times, fases, data, hora e a contagem inicia automaticamente." data-tech="HTML • CSS • JavaScript"
+                data-tech="HTML • CSS • JavaScript"
+                data-github="https://github.com/raina-santana/world-cup-timer"
+                data-demo="https://raina-santana.github.io/world-cup-timer/" role="button" tabindex="0"
+                aria-label="Ver detalhes do projeto Timer Copa do Mundo">
+
+                <img src="assets/img/programacao/timer-copa-do-mundo.png" alt="Captura de tela do projeto Timer Copa do Mundo"
+                    loading="lazy" decoding="async">
+                <div class="overlay">
+                    <h3>Timer Copa do Mundo</h3>
+                    <p>HTML • CSS • JavaScript</p>
+                </div>
+            </div>
+
+            <div class="project" data-category="programacao" data-title="Detetives da Internet"
+                data-image="assets/img/programacao/print-quiz.png"
+                data-description="Mini game educativo sobre segurança digital."
+                data-tech="HTML • CSS • JavaScript"
+                data-github="https://github.com/raina-santana/mini-game"
+                data-demo="https://raina-santana.github.io/mini-game/" role="button" tabindex="0"
+                aria-label="Ver detalhes do projeto Detetives da Internet">
+                <img src="assets/img/programacao/print-quiz.png" alt="Captura de tela do mini game Detetives da Internet"
+                    loading="lazy" decoding="async">
+                <div class="overlay">
+                    <h3>Detetives da Internet</h3>
+                    <p>Mini Game</p>
+                </div>
+            </div>
+
+            <div class="project" data-category="design" data-title="Instituto Resende" data-image="assets/img/design/grupo-resende.png"
+                data-description="Peças de social media para o Instituto Resende." data-tech="Illustrator • Photoshop" data-github="#"
+                data-demo="#" data-behance="https://www.behance.net/gallery/195855899/Social-Media-Grupo-Rezende"
+                role="button" tabindex="0" aria-label="Ver detalhes do projeto Instituto Resende">
+                <img src="assets/img/design/grupo-resende.png" alt="Peça de identidade visual do projeto Instituto Resende" loading="lazy"
+                    decoding="async">
+                <div class="overlay">
+                    <h3>Social Media</h3>
+                    <p>Illustrator</p>
+                </div>
+            </div>
+
+            <div class="project" data-category="design" data-title="Logos" data-image="assets/img/design/logos.png"
+                data-description="Logos criadas para clientes." data-tech="Illustrator • Photoshop" data-github="#"
+                data-demo="#" data-behance="#"
+                role="button" tabindex="0" aria-label="Ver detalhes do projeto Logos">
+                <img src="assets/img/design/logos.png" alt="Logos criadas para clientes" loading="lazy" decoding="async">
+                <div class="overlay">
+                    <h3>Logos</h3>
+                    <p>Illustrator</p>
+                </div>
+            </div>
+
+            <div class="project" data-category="design" data-title="Social Media" data-image="assets/img/design/social-media.png"
+                data-description="Artes de social media criadas para clientes." data-tech="Illustrator • Photoshop" data-github="#"
+                data-demo="#" data-behance="#"
+                role="button" tabindex="0" aria-label="Ver detalhes do projeto Social Media">
+                <img src="assets/img/design/social-media.png" alt="Artes de social media para clientes" loading="lazy" decoding="async">
+                <div class="overlay">
+                    <h3>Social Media</h3>
+                    <p>Illustrator</p>
+                </div>
+            </div>
+
+            <div class="project" data-category="design" data-title="Outras Artes" data-image="assets/img/design/outras-artes.png"
+                data-description="Outras artes criadas para clientes." data-tech="Illustrator • Photoshop" data-github="#"
+                data-demo="#" data-behance="#"
+                role="button" tabindex="0" aria-label="Ver detalhes do projeto Outras Artes">
+                <img src="assets/img/design/outras-artes.png" alt="Outras artes criadas para clientes" loading="lazy" decoding="async">
+                <div class="overlay">
+                    <h3>Outras Artes</h3>
+                    <p>Illustrator</p>
+                </div>
+            </div>
+
+            <!-- FOTOGRAFIAS -->
+
+            <div class="project" data-category="fotografia" data-title="Criança brincando com água" data-image="assets/img/fotografias/foto1.jpg"
+                data-description="Atividade recreativa infantil em um dia de calor na escola." data-tech="Lightroom • Photoshop" data-github="#"
+                data-demo="#" role="button" tabindex="0" aria-label="Ver detalhes da foto Criança brincando com água">
+                <img src="assets/img/fotografias/foto1.jpg" alt="Criança brincando com água em um dia de calor na escola" loading="lazy" decoding="async">
+                <div class="overlay">
+                    <h3>Criança brincando com água</h3>
+                    <p>Lightroom</p>
+                </div>
+            </div>
+            <div class="project" data-category="fotografia" data-title="Pássaro se alimentando" data-image="assets/img/fotografias/foto2.jpg"
+                data-description="Após uma breve chuva, um pássaro se alimenta de uma minhoca." data-tech="Lightroom • Photoshop" data-github="#"
+                data-demo="#" role="button" tabindex="0" aria-label="Ver detalhes da foto Pássaro se alimentando">
+                <img src="assets/img/fotografias/foto2.jpg" alt="Pássaro se alimentando de uma minhoca após a chuva" loading="lazy" decoding="async">
+                <div class="overlay">
+                    <h3>Pássaro se alimentando</h3>
+                    <p>Lightroom</p>
+                </div>
+            </div>
+            <div class="project" data-category="fotografia" data-title="Reflexo" data-image="assets/img/fotografias/foto3.jpg"
+                data-description="Ensaio de uma festa infantil." data-tech="Lightroom • Photoshop" data-github="#"
+                data-demo="#" role="button" tabindex="0" aria-label="Ver detalhes da foto Reflexo">
+                <img src="assets/img/fotografias/foto3.jpg" alt="Foto de reflexo em ensaio de festa infantil" loading="lazy" decoding="async">
+                <div class="overlay">
+                    <h3>Reflexo</h3>
+                    <p>Lightroom</p>
+                </div>
+            </div>
+            <div class="project" data-category="fotografia" data-title="Pausa" data-image="assets/img/fotografias/foto4.jpg"
+                data-description="Um final de semana de descanço em Serra da Mesa." data-tech="Lightroom • Photoshop" data-github="#"
+                data-demo="#" role="button" tabindex="0" aria-label="Ver detalhes da foto Pausa">
+                <img src="assets/img/fotografias/foto4.jpg" alt="Foto de um final de semana de descanso em Serra da Mesa" loading="lazy" decoding="async">
+                <div class="overlay">
+                    <h3>Pausa</h3>
+                    <p>Lightroom</p>
+                </div>
+            </div>
+            <div class="project" data-category="fotografia" data-title="Neblina matinal" data-image="assets/img/fotografias/foto5.jpg"
+                data-description="Muita neblina em uma manhã em Sobradinho/DF." data-tech="Lightroom • Photoshop" data-github="#"
+                data-demo="#" role="button" tabindex="0" aria-label="Ver detalhes da foto Neblina matinal">
+                <img src="assets/img/fotografias/foto5.jpg" alt="Neblina matinal em Sobradinho, DF" loading="lazy" decoding="async">
+                <div class="overlay">
+                    <h3>Neblina matinal</h3>
+                    <p>Lightroom</p>
+                </div>
+            </div>
+            <div class="project" data-category="fotografia" data-title="Pássaro" data-image="assets/img/fotografias/foto6.jpg"
+                data-description="Pousou, cliquei." data-tech="Lightroom • Photoshop" data-github="#"
+                data-demo="#" role="button" tabindex="0" aria-label="Ver detalhes da foto Pássaro">
+                <img src="assets/img/fotografias/foto6.jpg" alt="Pássaro fotografado logo após pousar" loading="lazy" decoding="async">
+                <div class="overlay">
+                    <h3>Pássaro</h3>
+                    <p>Lightroom</p>
+                </div>
+            </div>
+            <div class="project" data-category="fotografia" data-title="Fios" data-image="assets/img/fotografias/foto7.jpg"
+                data-description="Um pássaro faz um breve descanso na fiação." data-tech="Lightroom • Photoshop" data-github="#"
+                data-demo="#" role="button" tabindex="0" aria-label="Ver detalhes da foto Fios">
+                <img src="assets/img/fotografias/foto7.jpg" alt="Pássaro descansando sobre fiação elétrica" loading="lazy" decoding="async">
+                <div class="overlay">
+                    <h3>Fios</h3>
+                    <p>Lightroom</p>
+                </div>
+            </div>
+            <div class="project" data-category="fotografia" data-title="Bem-te-vi" data-image="assets/img/fotografias/foto8.jpg"
+                data-description="Bem-te-vi tentando se esconder." data-tech="Lightroom • Photoshop" data-github="#"
+                data-demo="#" role="button" tabindex="0" aria-label="Ver detalhes da foto Bem-te-vi">
+                <img src="assets/img/fotografias/foto8.jpg" alt="Bem-te-vi tentando se esconder na vegetação" loading="lazy" decoding="async">
+                <div class="overlay">
+                    <h3>Bem-te-vi</h3>
+                    <p>Lightroom</p>
+                </div>
+            </div>
+            <div class="project" data-category="fotografia" data-title="Solidão" data-image="assets/img/fotografias/foto9.jpg"
+                data-description="Intervalo na escola." data-tech="Lightroom • Photoshop" data-github="#"
+                data-demo="#" role="button" tabindex="0" aria-label="Ver detalhes da foto Solidão">
+                <img src="assets/img/fotografias/foto9.jpg" alt="Foto de um momento de solidão durante intervalo escolar" loading="lazy" decoding="async">
+                <div class="overlay">
+                    <h3>Solidão</h3>
+                    <p>Lightroom</p>
+                </div>
+            </div>
+            <div class="project" data-category="fotografia" data-title="Cristal" data-image="assets/img/fotografias/foto10.jpg"
+                data-description="Cristal em seus primeiros dias na nova casa." data-tech="Lightroom • Photoshop" data-github="#"
+                data-demo="#" role="button" tabindex="0" aria-label="Ver detalhes da foto Cristal">
+                <img src="assets/img/fotografias/foto10.jpg" alt="Cristal em seus primeiros dias na nova casa" loading="lazy" decoding="async">
+                <div class="overlay">
+                    <h3>Cristal</h3>
+                    <p>Lightroom</p>
+                </div>
+            </div>
+            <div class="project" data-category="fotografia" data-title="Família de capivaras" data-image="assets/img/fotografias/foto11.jpg"
+                data-description="Uma viagem ao pantanal, Corumbá/MS, paramos no meio da pista para acompanhar a travessia dessa família." data-tech="Lightroom • Photoshop" data-github="#"
+                data-demo="#" role="button" tabindex="0" aria-label="Ver detalhes da foto Família de capivaras">
+                <img src="assets/img/fotografias/foto11.jpg" alt="Família de capivaras ao entardecer" loading="lazy" decoding="async">
+                <div class="overlay">
+                    <h3>Família de capivaras</h3>
+                    <p>Lightroom</p>
+                </div>
+            </div>
+            <div class="project" data-category="fotografia" data-title="Nova vida" data-image="assets/img/fotografias/foto12.jpg"
+                data-description="Primeiro ensaio de gestante. Modelo: Adriele Portugal" data-tech="Lightroom • Photoshop" data-github="#"
+                data-demo="#" role="button" tabindex="0" aria-label="Ver detalhes da foto Nova vida">
+                <img src="assets/img/fotografias/foto12.jpg" alt="Ensaio fotográfico de gestante" loading="lazy" decoding="async">
+                <div class="overlay">
+                    <h3>Nova vida</h3>
+                    <p>Lightroom</p>
+                </div>
+            </div>
+            <div class="project" data-category="fotografia" data-title="Pose" data-image="assets/img/fotografias/foto13.jpg"
+                data-description="Modelo: Gabriela Santana." data-tech="Lightroom • Photoshop" data-github="#"
+                data-demo="#" role="button" tabindex="0" aria-label="Ver detalhes da foto Pose">
+                <img src="assets/img/fotografias/foto13.jpg" alt="Retrato de modelo posando para ensaio fotográfico" loading="lazy" decoding="async">
+                <div class="overlay">
+                    <h3>Pose</h3>
+                    <p>Lightroom</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="skills">
+        <h2 class="title">Skills</h2>
+        <div class="skills">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>Node.js</span>
+            <span>Python</span>
+            <span>Photoshop</span>
+            <span>Illustrator</span>
+            <span>Premiere</span>
+            <span>InDesign</span>
+            <span>Lightroom</span>
+            <span>VS Code</span>
+        </div>
+        <!-- Ajuste essa lista para refletir suas skills reais -->
+    </section>
+
+    <section id="contato">
+        <h2 class="title">Contato</h2>
+        <div class="contact">
+            <a href="mailto:rainasantana.s@gmail.com">✉️ E-mail</a>
+            <a href="https://github.com/raina-santana" target="_blank" rel="noopener noreferrer">💻 GitHub</a>
+            <a href="https://www.linkedin.com/in/rainasantana/" target="_blank" rel="noopener noreferrer">🔗
+                LinkedIn</a>
+        </div>
+        <!-- Substitua os links acima pelos seus contatos reais -->
+    </section>
+
+    <footer>
+        <p>&copy; <span id="ano"></span> Rainã Santana. Todos os direitos reservados.</p>
+    </footer>
+
+    <button id="topo" aria-label="Voltar ao topo">↑</button>
+
+    <div id="projectModal" class="project-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-box">
+            <button class="close-modal" aria-label="Fechar">&times;</button>
+            <img id="modalImage" class="modal-image" src="" alt="">
+            <div class="modal-content">
+                <h2 id="modalTitle"></h2>
+                <p id="modalDescription"></p>
+                <div id="modalTech" class="modal-tech"></div>
+                <div class="modal-buttons">
+                    <a id="modalDemo" class="btn" target="_blank" rel="noopener noreferrer">🌐 Ver Projeto</a>
+                    <a id="modalGithub" class="btn2" target="_blank" rel="noopener noreferrer">💻 GitHub</a>
+                    <a id="modalBehance" class="btn3" target="_blank" rel="noopener noreferrer">🎨 Behance</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
