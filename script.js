@@ -201,6 +201,12 @@ window.addEventListener("scroll", () => {
 const buttons = document.querySelectorAll(".filters button");
 const projects = document.querySelectorAll(".project");
 
+function aplicarFiltro(filtro) {
+    projects.forEach(project => {
+        project.style.display = (project.dataset.category === filtro) ? "block" : "none";
+    });
+}
+
 buttons.forEach(button => {
     button.addEventListener("click", () => {
         buttons.forEach(btn => {
@@ -210,15 +216,27 @@ buttons.forEach(button => {
         button.classList.add("active");
         button.setAttribute("aria-pressed", "true");
 
-        const filtro = button.dataset.filter;
+        aplicarFiltro(button.dataset.filter);
+    });
+});
 
-        projects.forEach(project => {
-            if (filtro === "all" || project.dataset.category === filtro) {
-                project.style.display = "block";
-            } else {
-                project.style.display = "none";
-            }
-        });
+// Aplica o filtro padrão (Programação) já na carga da página,
+// já que agora é a primeira aba e deve vir ativa sem precisar clicar
+const filtroInicial = document.querySelector(".filters button.active");
+if (filtroInicial) {
+    aplicarFiltro(filtroInicial.dataset.filter);
+}
+
+// ==========================================
+// LINKS RÁPIDOS DOS CARDS (Ver Projeto / Código)
+// Impede que o clique neles abra o modal do card
+// ==========================================
+document.querySelectorAll(".quick-link").forEach(link => {
+    link.addEventListener("click", (e) => {
+        e.stopPropagation();
+    });
+    link.addEventListener("keydown", (e) => {
+        e.stopPropagation();
     });
 });
 
