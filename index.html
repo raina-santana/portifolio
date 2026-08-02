@@ -7,9 +7,9 @@
     <title>Rainã Santana | Portfólio</title>
 
     <meta name="description"
-        content="Portfólio de Rainã Santana — Desenvolvedor Front-end, Designer Gráfico e Fotógrafo.">
+        content="Portfólio de Rainã Santana — Desenvolvedor Front-end em formação, construindo interfaces com HTML, CSS, JavaScript e React.">
     <meta property="og:title" content="Rainã Santana | Portfólio">
-    <meta property="og:description" content="Desenvolvedor Front-end, Designer Gráfico e Fotógrafo.">
+    <meta property="og:description" content="Desenvolvedor Front-end em formação, construindo interfaces com HTML, CSS, JavaScript e React.">
     <meta property="og:image" content="assets/img/foto-perfil.jpg">
     <meta property="og:type" content="website">
 
@@ -23,7 +23,7 @@
 
 <body>
 
-    <!-- Partículas de fundo (o JS preenche isso dinamicamente) -->
+    <!-- Partículas de fundo  -->
     <div id="particles" aria-hidden="true"></div>
 
     <header>
@@ -47,7 +47,7 @@
                 <span>Olá, eu sou</span>
                 <h1>Rainã Santana</h1>
                 <h2 id="typing" aria-live="polite"></h2>
-                <p>Desenvolvedor Front-end, Designer Gráfico e Fotógrafo.</p>
+                <p>Desenvolvedor Front-end em formação, construindo interfaces com HTML, CSS, JavaScript e React.</p>
                 <div class="buttons">
                     <a class="btn" href="#portfolio">Ver Projetos</a>
                     <a class="btn2" href="#contato">Falar Comigo</a>
@@ -65,7 +65,11 @@
         <div class="about">
             <div class="card">
                 <h3>💻 Desenvolvimento</h3>
-                <p>HTML, CSS, JavaScript, React e projetos Front-end.</p>
+                <p>HTML, CSS, JavaScript e React. Também estudando Python, SQL e Git/GitHub na faculdade de ADS.</p>
+            </div>
+            <div class="card">
+                <h3>🌎 Idioma</h3>
+                <p>Inglês avançado (WiseUp).</p>
             </div>
             <div class="card">
                 <h3>🎨 Design</h3>
@@ -120,8 +124,7 @@
         <h2 class="title">Projetos</h2>
 
         <div class="filters">
-            <button class="active" data-filter="all" aria-pressed="true">Todos</button>
-            <button data-filter="programacao" aria-pressed="false">Programação</button>
+            <button class="active" data-filter="programacao" aria-pressed="true">Programação</button>
             <button data-filter="design" aria-pressed="false">Design</button>
             <button data-filter="fotografia" aria-pressed="false">Fotografia</button>
         </div>
@@ -131,32 +134,69 @@
 
             <div class="project" data-category="programacao" data-title="Timer Copa do Mundo"
                 data-image="assets/img/programacao/timer-copa-do-mundo.png"
-                data-description="Projeto de um timer temático para a Copa do Mundo onde se seleciona as partidas, times, fases, data, hora e a contagem inicia automaticamente." data-tech="HTML • CSS • JavaScript"
+                data-description="Contador regressivo para os jogos da Copa do Mundo 2026, pensado para ser exibido em telões.
+                Desenvolvido em HTML, CSS e JavaScript puro, com atualização em tempo real e layout responsivo para diferentes tamanhos de tela.
+                Desafio: exibir a contagem de forma legível à distância, em telões de resolução e proporção variadas.
+                Solução: layout fluido com unidades relativas (rem/vw) e testes em múltiplas resoluções."
                 data-tech="HTML • CSS • JavaScript"
                 data-github="https://github.com/raina-santana/world-cup-timer"
                 data-demo="https://raina-santana.github.io/world-cup-timer/" role="button" tabindex="0"
                 aria-label="Ver detalhes do projeto Timer Copa do Mundo">
 
-                <img src="assets/img/programacao/timer-copa-do-mundo.png" alt="Captura de tela do projeto Timer Copa do Mundo"
-                    loading="lazy" decoding="async">
+                <div class="browser-frame">
+                    <div class="browser-bar" aria-hidden="true">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <img src="assets/img/programacao/timer-copa-do-mundo.png"
+                        alt="Captura de tela do projeto Timer Copa do Mundo" loading="lazy" decoding="async">
+                </div>
+
                 <div class="overlay">
                     <h3>Timer Copa do Mundo</h3>
                     <p>HTML • CSS • JavaScript</p>
+                </div>
+
+                <div class="quick-links">
+                    <a class="quick-link" href="https://raina-santana.github.io/world-cup-timer/" target="_blank"
+                        rel="noopener noreferrer">🔗 Ver Projeto</a>
+                    <a class="quick-link" href="https://github.com/raina-santana/world-cup-timer" target="_blank"
+                        rel="noopener noreferrer">💻 Código</a>
                 </div>
             </div>
 
             <div class="project" data-category="programacao" data-title="Detetives da Internet"
                 data-image="assets/img/programacao/print-quiz.png"
-                data-description="Mini game educativo sobre segurança digital."
+                data-description="Mini game interativo sobre segurança digital, desenvolvido em HTML, CSS e JavaScript,
+                com lógica de perguntas e respostas e feedback visual imediato para o usuário.
+                Desafio: manter o estado do quiz (pontuação, progresso, respostas) de forma organizada em JS puro, sem framework.
+                Solução: estrutura de dados simples controlando o fluxo do jogo e atualização dinâmica do DOM."
                 data-tech="HTML • CSS • JavaScript"
                 data-github="https://github.com/raina-santana/mini-game"
                 data-demo="https://raina-santana.github.io/mini-game/" role="button" tabindex="0"
                 aria-label="Ver detalhes do projeto Detetives da Internet">
-                <img src="assets/img/programacao/print-quiz.png" alt="Captura de tela do mini game Detetives da Internet"
-                    loading="lazy" decoding="async">
+
+                <div class="browser-frame">
+                    <div class="browser-bar" aria-hidden="true">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <img src="assets/img/programacao/print-quiz.png"
+                        alt="Captura de tela do mini game Detetives da Internet" loading="lazy" decoding="async">
+                </div>
+
                 <div class="overlay">
                     <h3>Detetives da Internet</h3>
                     <p>Mini Game</p>
+                </div>
+
+                <div class="quick-links">
+                    <a class="quick-link" href="https://raina-santana.github.io/mini-game/" target="_blank"
+                        rel="noopener noreferrer">🔗 Ver Projeto</a>
+                    <a class="quick-link" href="https://github.com/raina-santana/mini-game" target="_blank"
+                        rel="noopener noreferrer">💻 Código</a>
                 </div>
             </div>
 
@@ -345,18 +385,21 @@
             <span>Lightroom</span>
             <span>VS Code</span>
         </div>
-        <!-- Ajuste essa lista para refletir suas skills reais -->
     </section>
 
     <section id="contato">
         <h2 class="title">Contato</h2>
         <div class="contact">
-            <a href="mailto:rainasantana.s@gmail.com">✉️ E-mail</a>
-            <a href="https://github.com/raina-santana" target="_blank" rel="noopener noreferrer">💻 GitHub</a>
-            <a href="https://www.linkedin.com/in/rainasantana/" target="_blank" rel="noopener noreferrer">🔗
-                LinkedIn</a>
+            <a href="mailto:rainasantana.s@gmail.com">
+                ✉️ E-mail
+            </a>
+            <a href="https://github.com/raina-santana" target="_blank" rel="noopener noreferrer">
+                💻 GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/rainasantana/" target="_blank" rel="noopener noreferrer">
+                🔗 LinkedIn
+            </a>
         </div>
-        <!-- Substitua os links acima pelos seus contatos reais -->
     </section>
 
     <footer>
