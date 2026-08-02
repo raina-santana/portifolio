@@ -1,6 +1,4 @@
-/* ==========================
-   RESET
-========================== */
+
 *{
     margin:0;
     padding:0;
@@ -811,4 +809,63 @@ gap:10px;
 font-size:14px;
 padding:10px 18px;
 }
+}
+
+.browser-frame {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.browser-bar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 10px;
+    background: #1e1e1e;
+}
+
+.browser-bar .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot.red {
+    background: #ff5f56;
+}
+
+.dot.yellow {
+    background: #ffbd2e;
+}
+
+.dot.green {
+    background: #27c93f;
+}
+
+.browser-frame img {
+    display: block;
+    width: 100%;
+}
+
+.quick-links {
+    display: flex;
+    gap: 14px;
+    padding: 10px 4px 0;
+}
+
+.quick-link {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.85;
+    transition: opacity 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.quick-link:hover,
+.quick-link:focus-visible {
+    opacity: 1;
+    text-decoration: underline;
 }
